@@ -52,6 +52,11 @@ h3 {
   font-family: var(--headings-font);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
   list-style: none;
 }
@@ -59,7 +64,7 @@ ul {
 /* Utilities */
 .plans__link {
   padding: 0.75rem 1.78125rem;
-  border: 2px solid;
+  border: 2px solid var(--Very-Dark-Violet);
 }
 
 .header {
@@ -100,7 +105,6 @@ ul {
 }
 
 .menu .plans__link {
-  border-color: (--Very-Dark-Violet);
   color: var(--Very-Dark-Violet);
 }
 
@@ -135,6 +139,7 @@ ul {
     background-position: bottom;
     background-size: contain;
     transition: left 0.3s ease-in-out;
+    z-index: 99;
   }
 
   .menu ul {
@@ -178,4 +183,27 @@ ul {
   .open-close {
     display: none;
   }
+}
+
+.humanizing {
+  background-color: var(--Dark-Violet);
+  position: relative;
+}
+
+.section__line {
+  width: 150px;
+  height: 1px;
+  color: var(--Very-Light-Gray);
+  margin-bottom: 4rem;
+}
+
+.humanizing .title {
+  font-size: 4.5rem;
+  line-height: 0.8;
+  color: var(--Very-Light-Gray);
+}
+
+.humanizing .description {
+  color: var(--Very-Light-Gray);
+  line-height: 1.5;
 }
