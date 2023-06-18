@@ -34,6 +34,11 @@ html {
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 body {
@@ -69,12 +74,13 @@ ul {
 
 .header {
   width: 100%;
-  /* height: 80px; */
   padding: 30.5px 0;
+  position: relative;
+  z-index: 999;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -93,11 +99,6 @@ ul {
 
 .menu a {
   color: var(--Dark-Grayis-Violet);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .menu a:not(.plans__link):hover {
@@ -159,6 +160,7 @@ ul {
     border: 2px solid var(--Very-Light-Gray);
     display: inline-block;
     width: 100%;
+    height: 56px;
     color: var(--Very-Light-Gray);
   }
 
@@ -187,7 +189,19 @@ ul {
 
 .humanizing {
   background-color: var(--Dark-Violet);
+  height: 600px;
   position: relative;
+}
+
+.humanizing .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 6.5625rem;
+}
+
+.content {
+  padding-right: 1.875rem;
 }
 
 .section__line {
@@ -199,11 +213,45 @@ ul {
 
 .humanizing .title {
   font-size: 4.5rem;
-  line-height: 0.8;
+  line-height: 0.9;
   color: var(--Very-Light-Gray);
+  margin-bottom: 2rem;
 }
 
 .humanizing .description {
   color: var(--Very-Light-Gray);
   line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.humanizing .plans__link {
+  border-color: var(--Very-Light-Gray);
+  color: var(--Very-Light-Gray);
+  text-transform: uppercase;
+}
+
+.humanizing .plans__link:hover {
+  color: var(--Dark-Violet);
+  background-color: var(--Very-Light-Gray);
+}
+
+.bg__pattern-desktop-1,
+.bg__pattern-desktop-2 {
+  /* display: none; */
+  position: absolute;
+}
+
+.bg__pattern-desktop-1 {
+  bottom: -20.8rem;
+}
+
+.bg__pattern-desktop-2 {
+  top: -5rem;
+  right: 0;
+  z-index: 1;
+}
+
+.bg__pattern-mobile-1,
+.bg__pattern-mobile-2 {
+  display: none;
 }
